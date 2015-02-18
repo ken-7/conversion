@@ -1,0 +1,107 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 0 0 0 #004f5d;
+  line-height: 1.5; }
+
+p {
+  font-size: 0.9em;
+  color: #003039;
+  margin-bottom: 20px; }
+
+.area {
+  padding: 50px 0; }
+
+.headbg {
+  background-image: url("img/city.jpg"); }
+
+header {
+  background-color: #fff;
+  margin-top: 20px;
+  height: 70px;
+  border-top: 1px solid #ddd;
+  box-shadow: 1px 1px 3px #ddd; }
+  header #logo {
+    background: #333333;
+    text-transform: uppercase;
+    height: 70px;
+    padding-left: 30px; }
+    header #logo h1 {
+      color: #6df1fe;
+      font-family: "Magra", sans-serif;
+      font-weight: 700;
+      font-size: 2.1em;
+      padding-top: 8px;
+      margin: 0; }
+    header #logo h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 1.2em; }
+      header #logo h2 small {
+        color: #fff;
+        letter-spacing: 3px; }
+    header #logo:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-bottom: 69px solid white;
+      border-left: 69px solid #333;
+      width: 0; }
+  header nav ul {
+    float: right; }
+    header nav ul li {
+      display: inline;
+      line-height: 70px; }
+      header nav ul li:last-child a {
+        border-left: 1px solid #ddd; }
+      header nav ul li a {
+        padding: 0px 25px;
+        float: left;
+        color: #bbb;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        font-weight: 700;
+        letter-spacing: 1.5px; }
+        header nav ul li a:hover {
+          text-decoration: none; }
+
+.tagline {
+  padding: 200px 0; }
+  .tagline h2 {
+    font-size: 3.5em;
+    font-family: "Magra", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase; }
+  .tagline p {
+    color: #fff; }
+
+.welcome {
+  padding-bottom: 50px; }
+  .welcome h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7c7c7c;
+    margin-bottom: 30px; }
+
+.featured h3 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #7c7c7c;
+  margin-bottom: 20px; }
+
+.projects ul {
+  padding-left: 0; }
+  .projects ul li {
+    display: inline; }
+    .projects ul li a {
+      float: left;
+      background-color: #333;
+      width: 25%;
+      height: auto;
+      border: 1px solid #444; }
+      .projects ul li a img {
+        width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
