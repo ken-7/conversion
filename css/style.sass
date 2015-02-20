@@ -1,9 +1,18 @@
 $primary-blue: #6df1fe
+$second-blue: #00a4c2
 $primary-heading: #7c7c7c
 $primary-black: #333333
 $primary-text: #003039
 $font-m: 'Magra', sans-serif
 $font-o: 'Open Sans', sans-serif
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+
 body
 	font-family: $font-o
 	text-shadow: 0 0 0 #004f5d
@@ -20,8 +29,28 @@ p
 .headbg
 	background-image: url('img/city.jpg')
 
+.projectbg
+	background-image: url('img/projectbg.jpg')
+	padding: 100px 0
 
-header
+.box-more
+	padding-top: 20px
+	display: block	
+	a
+		background-color: $second-blue
+		float: left
+		padding: 15px 60px
+		color: #fff
+		font-size: 0.85em
+		+border-radius(10px)
+
+.more
+	a
+		color: $second-blue
+		font-size: 0.8em
+		text-transform: uppercase
+
+header#head
 	background-color: #fff
 	margin-top: 20px
 	height: 70px
@@ -99,9 +128,13 @@ header
 	h2
 		text-transform: uppercase
 		font-weight: 700
+		font-size: 2.5em
 		color: $primary-heading
 		margin-bottom: 30px
-
+	
+	img
+		display: block
+		margin: auto
 
 .featured
 	h3
@@ -112,6 +145,14 @@ header
 		margin-bottom: 20px
 
 .projects
+
+	h2
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 2.5em
+		color: #fafafa
+		margin-bottom: 50px
+
 	ul
 		padding-left: 0
 		li
@@ -119,9 +160,57 @@ header
 			a
 				float: left
 				background-color: #333
-				width: 25%
+				width: 22%
+				margin: 1.5%
 				height: auto
 				border: 1px solid #444
 
 				img
 					width: 100%
+
+.home-news
+
+	h2
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 2.5em
+		color: $primary-heading
+		margin-bottom: 50px		
+
+	.time
+
+		border-right: 1px solid #ddd
+		text-align: center
+		//padding: 0 15px
+		//margin-right: 20px
+
+		span
+			display: block
+			margin: 0
+			padding: 0
+			line-height: 1
+
+		span.month
+			font-size: 1.8em
+			color: $primary-heading
+
+		span.day
+			font-size: 3em
+			color: $second-blue
+			font-weight: 700
+
+	ul.details
+		list-style-type: none
+		padding-left: 0
+
+		li
+			display: inline
+			margin-right: 5px
+
+	.article-head
+
+
+
+		h3
+			border-bottom: 1px solid #ddd
+			
