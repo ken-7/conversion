@@ -12,34 +12,62 @@ p {
   padding: 50px 0; }
 
 .headbg {
-  background-image: url("img/city.jpg"); }
+  background-image: url("img/city.jpg");
+  background-position: center top; }
 
-header {
+.projectbg {
+  background-image: url("img/projectbg.jpg");
+  padding: 100px 0;
+  background-position: center top; }
+
+.lightblue {
+  background-color: #00a4c2; }
+
+.box-more {
+  padding-top: 20px;
+  display: block; }
+  .box-more a {
+    background-color: #00a4c2;
+    float: left;
+    padding: 15px 60px;
+    color: #fff;
+    font-size: 0.85em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+
+.more a {
+  color: #00a4c2;
+  font-size: 0.8em;
+  text-transform: uppercase; }
+
+header#head {
   background-color: #fff;
   margin-top: 20px;
   height: 70px;
   border-top: 1px solid #ddd;
   box-shadow: 1px 1px 3px #ddd; }
-  header #logo {
+  header#head #logo {
     background: #333333;
     text-transform: uppercase;
     height: 70px;
     padding-left: 30px; }
-    header #logo h1 {
+    header#head #logo h1 {
       color: #6df1fe;
       font-family: "Magra", sans-serif;
       font-weight: 700;
       font-size: 2.1em;
       padding-top: 8px;
       margin: 0; }
-    header #logo h2 {
+    header#head #logo h2 {
       margin: 0;
       padding: 0;
       font-size: 1.2em; }
-      header #logo h2 small {
+      header#head #logo h2 small {
         color: #fff;
         letter-spacing: 3px; }
-    header #logo:before {
+    header#head #logo:before {
       content: "";
       position: absolute;
       right: 0;
@@ -47,23 +75,25 @@ header {
       border-bottom: 69px solid white;
       border-left: 69px solid #333;
       width: 0; }
-  header nav ul {
+  header#head nav ul {
     float: right; }
-    header nav ul li {
+    header#head nav ul li {
       display: inline;
       line-height: 70px; }
-      header nav ul li:last-child a {
+      header#head nav ul li:last-child a {
         border-left: 1px solid #ddd; }
-      header nav ul li a {
+      header#head nav ul li a {
         padding: 0px 25px;
         float: left;
         color: #bbb;
         text-transform: uppercase;
         font-size: 0.85em;
         font-weight: 700;
-        letter-spacing: 1.5px; }
-        header nav ul li a:hover {
-          text-decoration: none; }
+        letter-spacing: 1.5px;
+        transition: all 0.3s ease; }
+        header#head nav ul li a:hover {
+          text-decoration: none;
+          color: #00a4c2; }
 
 .tagline {
   padding: 200px 0; }
@@ -81,8 +111,12 @@ header {
   .welcome h2 {
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 2.5em;
     color: #7c7c7c;
     margin-bottom: 30px; }
+  .welcome img {
+    display: block;
+    margin: auto; }
 
 .featured h3 {
   text-transform: uppercase;
@@ -91,6 +125,12 @@ header {
   color: #7c7c7c;
   margin-bottom: 20px; }
 
+.projects h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #fafafa;
+  margin-bottom: 50px; }
 .projects ul {
   padding-left: 0; }
   .projects ul li {
@@ -98,10 +138,90 @@ header {
     .projects ul li a {
       float: left;
       background-color: #333;
-      width: 25%;
+      width: 22%;
+      margin: 1.5%;
       height: auto;
       border: 1px solid #444; }
       .projects ul li a img {
         width: 100%; }
+
+.home-news h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #7c7c7c;
+  margin-bottom: 50px; }
+.home-news article header {
+  margin-bottom: 20px; }
+.home-news article figure {
+  float: left;
+  margin-right: 10px; }
+.home-news .time {
+  border-right: 1px solid #ddd;
+  text-align: center; }
+  .home-news .time span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 1; }
+  .home-news .time span.month {
+    font-size: 1.8em;
+    color: #7c7c7c; }
+  .home-news .time span.day {
+    font-size: 3em;
+    color: #00a4c2;
+    font-weight: 700; }
+.home-news ul.details {
+  list-style-type: none;
+  padding-left: 0; }
+  .home-news ul.details li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 0.9em;
+    color: #7c7c7c; }
+.home-news .article-head h3 {
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase; }
+
+.testimonials {
+  padding: 20px 0; }
+  .testimonials h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .testimonials blockquote {
+    color: #fff;
+    font-size: 0.8em;
+    border-left: none;
+    margin-bottom: 10px; }
+  .testimonials span {
+    font-size: 0.8em;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 40px; }
+
+footer {
+  background-color: #333;
+  padding-top: 50px; }
+  footer h4 {
+    color: #fff;
+    border-bottom: 2px solid #00a4c2;
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+  footer p {
+    color: #fff; }
+  footer ul {
+    padding-left: 0; }
+    footer ul li a {
+      color: #7c7c7c;
+      text-transform: uppercase;
+      font-size: 0.8em; }
+  footer h5 {
+    display: block;
+    border-top: 1px solid #444;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 0.8em;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
