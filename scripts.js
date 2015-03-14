@@ -22,3 +22,6 @@ $(document).ready(function(){
  });	
       //$("#sticky").sticky({ topSpacing: 90 });
 }); 
+
+
+new UISearch( document.getElementById( 'sb-search' ) );

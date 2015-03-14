@@ -22,21 +22,36 @@
 
 <!-- HEAD AREA -->
 <div class="headbg" data-speed="5" data-type="background">
-	<div class="container-fluid">
+	<div class="container">
 		<header id="head">
 			<div id="logo" class="col-md-4">
 			  <h1>Conversion</h1>
 			  <h2><small>Business Experts</small></h2>
 		    </div>
 			<nav class="col-md-8">
-				<ul class="row">
+				
+            <ul class="nav navbar-right">
 					<li><a href="">Home</a></li>
 					<li><a href="">About</a></li>
 					<li><a href="">News</a></li>
 					<li><a href="">Services</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href=""><i class="glyphicon glyphicon-search"></i></a></li>
-				</ul>
+					<li><a href="">Contact</a></li>            	
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li>
+                          <form class="navbar-form navbar-left" role="search">
+                              <div class="form-group">
+                              <input class="form-control" placeholder="Search" type="text">
+                              </div>
+                              <button type="submit" class="btn btn-default btn-block submitBtn">Submit</button>
+                          </form>
+                      	</li>
+					</ul>
+				</li>
+			</ul>					
+
+			
 			</nav>
 		</header>
 
@@ -49,8 +64,9 @@
 </div>
 
 <!-- First AREA -->
-<div class="container-fluid area">
+<div class="container area">
 	<div class="clearfix welcome">
+
 		<section>
 			<div class="col-md-6">
 				<h2>Advance your Business!</h2>
@@ -88,7 +104,7 @@
 <!-- Second AREA -->
 
 <div class="projectbg" data-speed="7" data-type="background">
-  <div class="container-fluid">
+  <div class="container">
 	<div class="row projects">
 		<section class="text-center">
 			<h2>Our Projects</h2>
@@ -108,7 +124,7 @@
 </div>
 <!-- Third AREA -->
 
-<div class="container-fluid area">
+<div class="container area">
 	<div class="clearfix home-news">
 		<section>
 			<h2 class="text-center">Latest News</h2>
@@ -151,7 +167,7 @@
 
 <!-- Fourth AREA -->
 <div class="lightblue">
-<div class="container-fluid">
+<div class="container">
 	<div class="row testimonials">
 		<section class="text-center col-md-8 col-md-offset-2">
 			<h2>Testimonials</h2>
@@ -163,7 +179,7 @@
 </div>
 <!-- Footer AREA -->
 <footer>
-    <div class="container-fluid">
+    <div class="container">
     	<div class="row">
     		<section class="col-md-3">
     			<h4>Overview</h4>
@@ -216,6 +232,8 @@
 </footer>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/vendor/classie.js"></script>
+<script src="js/vendor/uisearch.js"></script>
 <script src="scripts.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <!--<script>
